@@ -1,12 +1,10 @@
 # Matrix Registration Form
 
-A modern, responsive registration form built with **React**, **React Router**, and **Tailwind CSS**. The app features real-time validation, a Matrix-themed animated GIF background, and a details page to review submitted data.
+A modern, responsive registration form built with **React**, **React Router**, and **Tailwind CSS**. The app features real-time validation, and a details page to review submitted data.
 
-![Matrix GIF Background](https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif)
+
 
 ## Features
-
-- **Matrix GIF background** that covers the entire viewport, even while scrolling
 - Responsive and accessible form UI using Tailwind CSS
 - Real-time validation with helpful error messages
 - Prevents use of temporary email domains
@@ -50,7 +48,7 @@ A modern, responsive registration form built with **React**, **React Router**, a
 
 ```
 src/
-├── App.jsx         # Main app with Matrix GIF background and routing
+├── App.jsx         # Main app  routing
 ├── Form.jsx        # Registration form component
 ├── Details.jsx     # Details review component
 ├── App.css         # Global styles (includes Tailwind and background fixes)
