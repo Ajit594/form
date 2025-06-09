@@ -180,12 +180,12 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-12 p-6 border border-gray-300 rounded-lg shadow-lg bg-gray-50">
-      <h2 className="text-2xl font-bold mb-6 text-center bg-black border-2">Registration Form</h2>
+    <div className="max-w-lg mx-auto my-12 p-8 border border-teal-300 rounded-xl shadow-2xl bg-white">
+      <h2 className="text-3xl font-bold mb-8 text-center text-white bg-teal-600 py-3 rounded-lg shadow">Registration Form</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         {/* First Name */}
         <div>
-          <label htmlFor="firstName" className="block mb-1 font-semibold text-gray-700">First Name:</label>
+          <label htmlFor="firstName" className="block mb-1 font-semibold text-teal-700">First Name:</label>
           <input
             type="text"
             id="firstName"
@@ -193,7 +193,7 @@ const Form = () => {
             value={formData.firstName}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.firstName && errors.firstName && (
             <span className="text-red-600 text-sm mt-1 block">{errors.firstName}</span>
@@ -201,7 +201,7 @@ const Form = () => {
         </div>
         {/* Last Name */}
         <div>
-          <label htmlFor="lastName" className="block mb-1 font-semibold text-gray-700">Last Name:</label>
+          <label htmlFor="lastName" className="block mb-1 font-semibold text-teal-700">Last Name:</label>
           <input
             type="text"
             id="lastName"
@@ -209,7 +209,7 @@ const Form = () => {
             value={formData.lastName}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.lastName && errors.lastName && (
             <span className="text-red-600 text-sm mt-1 block">{errors.lastName}</span>
@@ -217,7 +217,7 @@ const Form = () => {
         </div>
         {/* Username */}
         <div>
-          <label htmlFor="username" className="block mb-1 font-semibold text-gray-700">Username:</label>
+          <label htmlFor="username" className="block mb-1 font-semibold text-teal-700">Username:</label>
           <input
             type="text"
             id="username"
@@ -225,7 +225,7 @@ const Form = () => {
             value={formData.username}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.username && errors.username && (
             <span className="text-red-600 text-sm mt-1 block">{errors.username}</span>
@@ -233,7 +233,7 @@ const Form = () => {
         </div>
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block mb-1 font-semibold text-gray-700">E-mail:</label>
+          <label htmlFor="email" className="block mb-1 font-semibold text-teal-700">E-mail:</label>
           <input
             type="email"
             id="email"
@@ -241,7 +241,7 @@ const Form = () => {
             value={formData.email}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.email && errors.email && (
             <span className="text-red-600 text-sm mt-1 block">{errors.email}</span>
@@ -249,7 +249,7 @@ const Form = () => {
         </div>
         {/* Password */}
         <div>
-          <label htmlFor="password" className="block mb-1 font-semibold text-gray-700">Password:</label>
+          <label htmlFor="password" className="block mb-1 font-semibold text-teal-700">Password:</label>
           <div className="flex items-center">
             <input
               type={showPassword ? 'text' : 'password'}
@@ -257,7 +257,7 @@ const Form = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded text-black"
+              className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
             />
             <button
               type="button"
@@ -273,13 +273,13 @@ const Form = () => {
         </div>
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block mb-1 font-semibold text-gray-700">Phone No.:</label>
+          <label htmlFor="phone" className="block mb-1 font-semibold text-teal-700">Phone No.:</label>
           <div className="flex items-center">
             <select
               name="phoneCountryCode"
               value={formData.phoneCountryCode}
               onChange={handleChange}
-              className="p-2 border border-gray-300 rounded text-black mr-2"
+              className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
             >
               <option value="+91">+91 (India)</option>
               <option value="+91">+91 (Bharat)</option>
@@ -291,7 +291,7 @@ const Form = () => {
               value={formData.phoneNumber}
               onChange={handleChange}
               placeholder="e.g., 9876543210"
-              className="w-full p-2 border border-gray-300 rounded text-black"
+              className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
             />
           </div>
           {touched.phoneNumber && errors.phoneNumber && (
@@ -300,14 +300,14 @@ const Form = () => {
         </div>
         {/* Country */}
         <div>
-          <label htmlFor="country" className="block mb-1 font-semibold text-gray-700">Country:</label>
+          <label htmlFor="country" className="block mb-1 font-semibold text-teal-700">Country:</label>
           <select
             id="country"
             name="country"
             value={formData.country}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           >
             {countries.map((country) => (
               <option key={country.value} value={country.value}>
@@ -321,14 +321,14 @@ const Form = () => {
         </div>
         {/* City */}
         <div>
-          <label htmlFor="city" className="block mb-1 font-semibold text-gray-700">City:</label>
+          <label htmlFor="city" className="block mb-1 font-semibold text-teal-700">City:</label>
           <select
             id="city"
             name="city"
             value={formData.city}
             onChange={handleChange}
             onBlur={handleBlur}
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
             disabled={!formData.country || formData.country === ''}
           >
             {formData.country && citiesByCountry[formData.country] ? (
@@ -347,7 +347,7 @@ const Form = () => {
         </div>
         {/* PAN No. */}
         <div>
-          <label htmlFor="panNo" className="block mb-1 font-semibold text-gray-700">PAN No.:</label>
+          <label htmlFor="panNo" className="block mb-1 font-semibold text-teal-700">PAN No.:</label>
           <input
             type="text"
             id="panNo"
@@ -356,7 +356,7 @@ const Form = () => {
             onChange={handleChange}
             onBlur={handleBlur}
             placeholder="e.g., ABCDE1234F"
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.panNo && errors.panNo && (
             <span className="text-red-600 text-sm mt-1 block">{errors.panNo}</span>
@@ -364,7 +364,7 @@ const Form = () => {
         </div>
         {/* Aadhar No. */}
         <div>
-          <label htmlFor="aadharNo" className="block mb-1 font-semibold text-gray-700">Aadhar No.:</label>
+          <label htmlFor="aadharNo" className="block mb-1 font-semibold text-teal-700">Aadhar No.:</label>
           <input
             type="text"
             id="aadharNo"
@@ -373,7 +373,7 @@ const Form = () => {
             onChange={handleChange}
             onBlur={handleBlur}
             placeholder="e.g., 123456789012"
-            className="w-full p-2 border border-gray-300 rounded text-black"
+            className="w-full p-3 border border-teal-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-400 bg-white text-teal-900"
           />
           {touched.aadharNo && errors.aadharNo && (
             <span className="text-red-600 text-sm mt-1 block">{errors.aadharNo}</span>
@@ -382,7 +382,7 @@ const Form = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className={`bg-green-600  text-white px-6 py-3 rounded mt-6 self-end transition-opacity duration-300 ${isFormValid() ? 'opacity-100 cursor-pointer' : 'opacity-60 cursor-not-allowed'}`}
+          className={`bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg mt-8 self-end font-semibold shadow transition-all duration-300 ${isFormValid() ? 'opacity-100 cursor-pointer' : 'opacity-60 cursor-not-allowed'}`}
           disabled={!isFormValid()}
         >
           Register
